@@ -130,6 +130,7 @@ if (! isset ($_SESSION["login_attempts"])) {
   </style>
   
       <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	  
 </head>
 <body>
   <main>
@@ -148,6 +149,7 @@ if (! isset ($_SESSION["login_attempts"])) {
               <input type="password" name="password" id="password" class="form-control" pattern="(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}" title="Must contain at least one number and one uppercase and lowercase letter, special symbol and at least 8 or more characters" requireds value="<?php echo $password ?>">
               <span class="help-block"><?php echo $password_err;?></span>
             </div>
+			
 			 <div class="g-recaptcha" data-sitekey="6LeC0B8jAAAAAGU5mUukWLA_xJOkZnU2WZxNGozi"></div>
             <div class="form-group">
 				<?php 
